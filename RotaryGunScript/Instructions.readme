@@ -1,0 +1,97 @@
+﻿R e a d m e
+-----------
+
+DeltaWing's Rotary Gun Script.
+
+Features:
+	* One Script to Rule Them All! This script can manage as many rotary guns as your computer can handle
+	* Only one group required for all Rotary Guns
+	* Automatic assignment of guns to rotors
+	* Automatic prefiring of weapons with delay (railguns)
+	* Automatic charging of weapons that require power to fire (also railguns)
+	* One-click firing
+	* Information readout in Programmable Block interface
+	* Customizable offset for each rotor
+	* Automatic adjustment for rotor speed
+	* Supports any combination of any weapon on any rotor type
+	* Extremely optimized for performance [citation needed] (P.S: YMMV)
+
+
+
+
+
+To set up:
+	Step 1: Group all of the rotors and guns of EVERY rotary gun into one group (by default, the group name is "RotaryGuns").
+	Step 2: Recompile.
+	Step 3 (optional): Set in the custom data of each rotor an offset, and recompile.
+
+Any additional changes to configuration will require a recompile to take effect.
+
+And that's it! You're done!
+
+
+
+More info: 
+
+	The script is set up to fire on hotbar, so you just add the weapon type to your hotbar and click. It's that simple.
+	Alternatively, if you want it to constantly fire, or use a timer, simply set the Fire option in the block in the terminal.
+
+	For weapons that have a delay before firing, it will automatically calculate the delay and fire at the correct time (mostly just railguns).
+	For weapons that take power to charge, it will keep them on to charge until they are ready to fire, and will shut them off. This will produce a visual
+	effect, but don't be alarmed; it is not actually firing (also railguns).
+
+	The script indexes the relative angle of each gun relative to the rotor root, and compares it to the rotor's current angle to determine if it should fire.
+	This is more performant than checking the dot product of rotor and gun vectors, and requires less API calls.
+
+
+
+DO NOT EDIT VARIABLES IN THE SCRIPT! USE THE CUSTOM DATA INSTEAD!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nerds only beyond this point
